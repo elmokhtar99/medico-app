@@ -1,0 +1,49 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/learndb
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: false
+        show_sql: false
+    hibernate:
+      ddl-auto: create
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8443/realms/learn-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: login-app
+      principal-attribute: preferred_username
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: login-app
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+# Keycloak
+keycloak:
+  auth-server-url: http://localhost:8443
+  realm : master
+  realm-app : learn-realm
+  username : admin
+  password : admin
