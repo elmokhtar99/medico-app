@@ -48,3 +48,12 @@ keycloak:
   username : admin
   password : admin
 
+resilience4j:
+  ratelimiter:
+    instances:
+      payment-service:
+        limit-for-period: 5
+        limit-refresh-period: 15s
+        timeout-duration: 10s
+        register-health-indicator: true
+

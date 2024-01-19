@@ -23,11 +23,6 @@ public class OpenAPISecurityConfig {
                         .version("1.0"));
     }
 
-//    private SecurityScheme createOAuthScheme() {
-//        OAuthFlows flows = createOAuthFlows();
-//        return new SecurityScheme().type(SecurityScheme.Type.OAUTH2)
-//                .flows(flows);
-//    }
 private SecurityScheme createOAuthScheme() {
     return new SecurityScheme().type(SecurityScheme.Type.OAUTH2).flows(createOAuthFlows());
 }
