@@ -25,6 +25,7 @@ public class Response<D> {
 
 	public Response(String uid) {
 		super();
+		date = LocalDateTime.now();
 		this.uid = uid;
 	}
 }

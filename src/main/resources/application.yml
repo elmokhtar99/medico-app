@@ -15,8 +15,9 @@ spring:
       hibernate:
         format_sql: false
         show_sql: false
+        default_schema: medical_file
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
   security:
     oauth2:
       resourceserver:
