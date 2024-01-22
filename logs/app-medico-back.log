@@ -79150,3 +79150,917 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
 	... 25 common frames omitted
+2024-01-22 14:26:00,892 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 21360 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:26:00,894 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:26:00,933 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 14:26:00,933 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 14:26:01,722 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:26:01,858 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+2024-01-22 14:26:02,115 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:26:02,142 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:26:02,401 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:26:02,409 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:26:02,411 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:26:02,411 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:26:02,505 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:26:02,506 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1572 ms
+2024-01-22 14:26:02,609 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 14:26:02,756 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a227221
+2024-01-22 14:26:02,757 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 14:26:02,881 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:26:03,035 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:26:03,070 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:26:03,091 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:26:03,091 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:26:03,091 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:26:03,091 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:26:03,091 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:26:03,092 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:26:03,092 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:26:03,119 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:26:03,120 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:26:03,186 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:26:03,241 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 14:26:03,279 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:26:03,486 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:26:03,527 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:26:04,369 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:26:04,400 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:26:04,949 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:26:04,959 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:26:05,185 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bdd8466, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3783168c, org.springframework.security.web.context.SecurityContextHolderFilter@5dcd0d49, org.springframework.security.web.header.HeaderWriterFilter@793b5863, org.springframework.web.filter.CorsFilter@7a148ed9, org.springframework.security.web.csrf.CsrfFilter@372d1cc9, org.springframework.security.web.authentication.logout.LogoutFilter@1e71a0f7, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@7b95c71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1108a3b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70778ee9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68e1350a, org.springframework.security.web.session.SessionManagementFilter@585c9c6b, org.springframework.security.web.access.ExceptionTranslationFilter@ece4eba, org.springframework.security.web.access.intercept.AuthorizationFilter@35abbbcd]
+2024-01-22 14:26:05,615 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:26:05,645 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:26:05,665 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api'
+2024-01-22 14:26:05,672 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 5.112 seconds (process running for 6.814)
+2024-01-22 14:39:58,677 INFO o.a.j.l.DirectJDKLog [http-nio-8090-exec-5] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-22 14:39:58,678 INFO o.s.w.s.FrameworkServlet [http-nio-8090-exec-5] Initializing Servlet 'dispatcherServlet'
+2024-01-22 14:39:58,679 INFO o.s.w.s.FrameworkServlet [http-nio-8090-exec-5] Completed initialization in 1 ms
+2024-01-22 14:39:58,686 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-5] Securing GET /test/anonymous?hello=f
+2024-01-22 14:39:58,691 WARN o.s.w.s.h.HandlerMappingIntrospector$CacheResultLogHelper [http-nio-8090-exec-5] Cache miss for REQUEST dispatch to '/api/test/anonymous' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-22 14:39:58,706 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:39:58,707 WARN o.s.w.s.h.HandlerMappingIntrospector$CacheResultLogHelper [http-nio-8090-exec-5] Cache miss for REQUEST dispatch to '/api/test/anonymous' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-22 14:39:58,711 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-5] Secured GET /test/anonymous?hello=f
+2024-01-22 14:40:11,152 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:40:11,157 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-22 14:40:11,163 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-22 14:51:21,043 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning an alias
+ in 'reader', line 62, column 21:
+    allowed-origin-url: *
+                        ^
+unexpected character found  (0)
+ in 'reader', line 62, column 22:
+    allowed-origin-url: *
+                         ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanAnchor(ScannerImpl.java:1503)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchAlias(ScannerImpl.java:947)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:397)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:238)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:669)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205)
+	at org.yaml.snakeyaml.composer.Composer.composeKeyNode(Composer.java:359)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:344)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:162)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:515)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:203)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:169)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:366)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.medico.app.AppApplication.main(AppApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-01-22 14:51:54,980 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 24808 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:51:54,982 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:51:55,023 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 14:51:55,023 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 14:51:55,997 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:51:56,179 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 174 ms. Found 10 JPA repository interfaces.
+2024-01-22 14:51:56,464 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:51:56,491 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:51:56,742 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:51:56,749 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:51:56,750 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:51:56,751 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:51:56,830 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:51:56,830 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1806 ms
+2024-01-22 14:51:56,947 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 14:51:57,084 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f643aa
+2024-01-22 14:51:57,085 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 14:51:57,206 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:51:57,362 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:51:57,394 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:51:57,414 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:51:57,416 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:51:57,441 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:51:57,443 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:51:57,516 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:51:57,576 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 14:51:57,612 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:51:57,838 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:51:57,877 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:51:58,702 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:51:58,735 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:51:59,341 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:51:59,352 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:51:59,609 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52671c9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b2f0263, org.springframework.security.web.context.SecurityContextHolderFilter@730007a4, org.springframework.security.web.header.HeaderWriterFilter@72b66137, org.springframework.web.filter.CorsFilter@4183e9cd, org.springframework.security.web.csrf.CsrfFilter@4c314407, org.springframework.security.web.authentication.logout.LogoutFilter@39b90410, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@4b4034c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74cef82e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ac37b5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15f50f91, org.springframework.security.web.session.SessionManagementFilter@7e7797a2, org.springframework.security.web.access.ExceptionTranslationFilter@42562844, org.springframework.security.web.access.intercept.AuthorizationFilter@2d7915fb]
+2024-01-22 14:52:00,181 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:52:00,218 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:52:00,238 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api'
+2024-01-22 14:52:00,246 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 5.575 seconds (process running for 7.128)
+2024-01-22 14:52:53,308 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:52:53,311 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-22 14:52:53,316 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-22 14:52:58,394 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 23392 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:52:58,396 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:52:58,431 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 14:52:58,431 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 14:52:59,142 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:52:59,274 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 127 ms. Found 10 JPA repository interfaces.
+2024-01-22 14:52:59,523 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:52:59,539 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:52:59,755 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:52:59,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:52:59,763 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:52:59,764 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:52:59,834 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:52:59,834 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1402 ms
+2024-01-22 14:52:59,929 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 14:53:00,057 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@530761ab
+2024-01-22 14:53:00,059 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 14:53:00,158 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:53:00,299 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:53:00,336 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:53:00,352 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:53:00,376 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:53:00,378 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:53:00,438 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:53:00,477 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 14:53:00,510 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:53:00,686 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:53:00,719 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:53:01,472 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:53:01,501 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:53:01,990 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:53:01,999 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:53:02,210 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c1a4e50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@191305f6, org.springframework.security.web.context.SecurityContextHolderFilter@111cfab4, org.springframework.security.web.header.HeaderWriterFilter@87daf6e, org.springframework.web.filter.CorsFilter@493e833b, org.springframework.security.web.csrf.CsrfFilter@779e5f55, org.springframework.security.web.authentication.logout.LogoutFilter@6762053a, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@1a795087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a26741e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f069e1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee16aaf, org.springframework.security.web.session.SessionManagementFilter@69b0cde6, org.springframework.security.web.access.ExceptionTranslationFilter@1865293b, org.springframework.security.web.access.intercept.AuthorizationFilter@732613a6]
+2024-01-22 14:53:02,661 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:53:02,692 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:53:02,711 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api/v1'
+2024-01-22 14:53:02,718 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 4.627 seconds (process running for 6.272)
+2024-01-22 14:53:20,952 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:53:20,955 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-22 14:53:20,960 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-22 14:53:25,088 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 23772 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:53:25,089 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:53:25,122 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 14:53:25,122 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 14:53:25,810 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:53:25,935 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 120 ms. Found 10 JPA repository interfaces.
+2024-01-22 14:53:26,182 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:53:26,201 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:53:26,429 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:53:26,436 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:53:26,438 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:53:26,438 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:53:26,509 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:53:26,510 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1386 ms
+2024-01-22 14:53:26,608 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 14:53:26,729 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@557f7007
+2024-01-22 14:53:26,730 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 14:53:26,829 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:53:27,006 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:53:27,042 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:53:27,059 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:53:27,059 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:53:27,059 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:53:27,059 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:53:27,059 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:53:27,060 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:53:27,060 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:53:27,084 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:53:27,087 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:53:27,145 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:53:27,184 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 14:53:27,222 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:53:27,385 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:53:27,414 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:53:28,163 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:53:28,194 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:53:28,678 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:53:28,687 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:53:28,890 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6afd4a46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bae19cb, org.springframework.security.web.context.SecurityContextHolderFilter@702ca7a8, org.springframework.security.web.header.HeaderWriterFilter@43e23674, org.springframework.web.filter.CorsFilter@54bfed34, org.springframework.security.web.csrf.CsrfFilter@563a9575, org.springframework.security.web.authentication.logout.LogoutFilter@12df8eaf, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@1a54af4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f9f4979, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e966e68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78525a0c, org.springframework.security.web.session.SessionManagementFilter@3ca809a1, org.springframework.security.web.access.ExceptionTranslationFilter@2bbf8a94, org.springframework.security.web.access.intercept.AuthorizationFilter@7a502af9]
+2024-01-22 14:53:29,344 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:53:29,373 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:53:29,391 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api/v1'
+2024-01-22 14:53:29,397 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 4.594 seconds (process running for 6.135)
+2024-01-22 14:53:57,296 INFO o.a.j.l.DirectJDKLog [http-nio-8090-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-22 14:53:57,297 INFO o.s.w.s.FrameworkServlet [http-nio-8090-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-01-22 14:53:57,298 INFO o.s.w.s.FrameworkServlet [http-nio-8090-exec-2] Completed initialization in 1 ms
+2024-01-22 14:53:57,306 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-2] Securing GET /swagger-ui/index.html
+2024-01-22 14:53:57,312 WARN o.s.w.s.h.HandlerMappingIntrospector$CacheResultLogHelper [http-nio-8090-exec-2] Cache miss for REQUEST dispatch to '/api/v1/swagger-ui/index.html' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-22 14:53:57,326 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,327 WARN o.s.w.s.h.HandlerMappingIntrospector$CacheResultLogHelper [http-nio-8090-exec-2] Cache miss for REQUEST dispatch to '/api/v1/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-22 14:53:57,337 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-2] Secured GET /swagger-ui/index.html
+2024-01-22 14:53:57,388 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-6] Securing GET /swagger-ui/swagger-ui.css
+2024-01-22 14:53:57,388 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-7] Securing GET /swagger-ui/index.css
+2024-01-22 14:53:57,390 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,390 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,391 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-8] Securing GET /swagger-ui/swagger-ui-bundle.js
+2024-01-22 14:53:57,391 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-9] Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-01-22 14:53:57,392 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-4] Securing GET /swagger-ui/swagger-initializer.js
+2024-01-22 14:53:57,392 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,392 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,393 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,395 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-6] Secured GET /swagger-ui/swagger-ui.css
+2024-01-22 14:53:57,396 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-7] Secured GET /swagger-ui/index.css
+2024-01-22 14:53:57,396 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-8] Secured GET /swagger-ui/swagger-ui-bundle.js
+2024-01-22 14:53:57,397 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-9] Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-01-22 14:53:57,397 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-4] Secured GET /swagger-ui/swagger-initializer.js
+2024-01-22 14:53:57,631 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-1] Securing GET /v3/api-docs/swagger-config
+2024-01-22 14:53:57,634 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,635 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-5] Securing GET /swagger-ui/favicon-32x32.png
+2024-01-22 14:53:57,636 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,637 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-1] Secured GET /v3/api-docs/swagger-config
+2024-01-22 14:53:57,640 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-5] Secured GET /swagger-ui/favicon-32x32.png
+2024-01-22 14:53:57,681 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-3] Securing GET /v3/api-docs
+2024-01-22 14:53:57,682 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:53:57,683 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-3] Secured GET /v3/api-docs
+2024-01-22 14:53:58,050 INFO o.s.a.AbstractOpenApiResource [http-nio-8090-exec-3] Init duration for springdoc-openapi is: 349 ms
+2024-01-22 14:54:18,025 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-4] Securing GET /swagger-ui/oauth2-redirect.html
+2024-01-22 14:54:18,026 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8090-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-01-22 14:54:18,029 DEBUG o.s.s.w.FilterChainProxy [http-nio-8090-exec-4] Secured GET /swagger-ui/oauth2-redirect.html
+2024-01-22 14:57:51,770 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-01-22 14:57:51,774 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:51,805 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:57:51,808 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-01-22 14:57:51,811 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-01-22 14:57:51,902 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 23772 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:57:51,902 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:57:52,103 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:57:52,133 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 29 ms. Found 10 JPA repository interfaces.
+2024-01-22 14:57:52,193 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:57:52,194 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:57:52,232 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:57:52,232 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:52,232 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:57:52,232 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:57:52,273 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:57:52,273 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 369 ms
+2024-01-22 14:57:52,291 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-01-22 14:57:52,320 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3f05de35
+2024-01-22 14:57:52,320 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-01-22 14:57:52,327 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:57:52,344 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:57:52,360 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:57:52,361 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:57:52,369 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:57:52,370 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:57:52,383 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:57:52,386 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:57:52,392 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:57:52,393 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:57:52,517 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:57:52,526 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:57:52,593 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:57:52,596 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:57:52,647 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15d44711, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5efb2c8, org.springframework.security.web.context.SecurityContextHolderFilter@43f6e39c, org.springframework.security.web.header.HeaderWriterFilter@782a3e8f, org.springframework.web.filter.CorsFilter@aec890, org.springframework.security.web.csrf.CsrfFilter@64660aa9, org.springframework.security.web.authentication.logout.LogoutFilter@313b647, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@b6b79b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45f471e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c83e194, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50d8afe1, org.springframework.security.web.session.SessionManagementFilter@17919085, org.springframework.security.web.access.ExceptionTranslationFilter@530669f, org.springframework.security.web.access.intercept.AuthorizationFilter@16f276cb]
+2024-01-22 14:57:52,811 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:57:52,822 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:52,831 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api/v1'
+2024-01-22 14:57:52,836 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 0.962 seconds (process running for 269.575)
+2024-01-22 14:57:52,838 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-01-22 14:57:56,794 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 4 class path changes (3 additions, 0 deletions, 1 modification)
+2024-01-22 14:57:56,796 INFO o.a.j.l.DirectJDKLog [Thread-7] Stopping ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:56,806 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:57:56,807 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2024-01-22 14:57:56,810 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2024-01-22 14:57:56,879 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 23772 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 14:57:56,880 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 14:57:57,065 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 14:57:57,093 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 28 ms. Found 10 JPA repository interfaces.
+2024-01-22 14:57:57,150 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 14:57:57,151 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 14:57:57,182 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 14:57:57,182 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:57,182 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 14:57:57,182 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 14:57:57,223 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 14:57:57,224 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 343 ms
+2024-01-22 14:57:57,241 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2024-01-22 14:57:57,265 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@54648615
+2024-01-22 14:57:57,265 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2024-01-22 14:57:57,276 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 14:57:57,293 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 14:57:57,310 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 14:57:57,311 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 14:57:57,320 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 14:57:57,321 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 14:57:57,334 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 14:57:57,338 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 14:57:57,343 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 14:57:57,345 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 14:57:57,465 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 14:57:57,477 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 14:57:57,594 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 14:57:57,599 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 14:57:57,672 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44aa2c89, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@366e968f, org.springframework.security.web.context.SecurityContextHolderFilter@6b208cb2, org.springframework.security.web.header.HeaderWriterFilter@7b84c1d, org.springframework.web.filter.CorsFilter@cc24544, org.springframework.security.web.csrf.CsrfFilter@3bc93af3, org.springframework.security.web.authentication.logout.LogoutFilter@571bb471, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@4e18b107, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5862f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@409b5363, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7595d52, org.springframework.security.web.session.SessionManagementFilter@194c33ca, org.springframework.security.web.access.ExceptionTranslationFilter@1b7eb6da, org.springframework.security.web.access.intercept.AuthorizationFilter@79c87bd5]
+2024-01-22 14:57:57,856 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 14:57:57,869 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 14:57:57,880 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api/v1'
+2024-01-22 14:57:57,884 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 1.031 seconds (process running for 274.623)
+2024-01-22 14:57:57,886 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-01-22 15:01:21,055 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-01-22 15:01:21,057 INFO o.a.j.l.DirectJDKLog [Thread-11] Stopping ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:01:21,068 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 15:01:21,068 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2024-01-22 15:01:21,072 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2024-01-22 15:01:21,154 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 23772 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 15:01:21,154 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 15:01:21,394 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 15:01:21,422 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 27 ms. Found 10 JPA repository interfaces.
+2024-01-22 15:01:21,482 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 15:01:21,483 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 15:01:21,523 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 15:01:21,524 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:01:21,524 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 15:01:21,524 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 15:01:21,564 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 15:01:21,564 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 408 ms
+2024-01-22 15:01:21,585 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2024-01-22 15:01:21,616 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@7178db33
+2024-01-22 15:01:21,616 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2024-01-22 15:01:21,624 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 15:01:21,641 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:01:21,657 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 15:01:21,657 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 15:01:21,658 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 15:01:21,658 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 15:01:21,658 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 15:01:21,658 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 15:01:21,658 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 15:01:21,666 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 15:01:21,667 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 15:01:21,683 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 15:01:21,687 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 15:01:21,693 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 15:01:21,695 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 15:01:21,801 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 15:01:21,810 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 15:01:21,888 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 15:01:21,892 DEBUG o.s.s.c.a.a.b.AuthenticationManagerBuilder [restartedMain] No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-01-22 15:01:21,947 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20359b7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@602981f8, org.springframework.security.web.context.SecurityContextHolderFilter@3c3c2dc2, org.springframework.security.web.header.HeaderWriterFilter@edd217, org.springframework.web.filter.CorsFilter@529d928b, org.springframework.security.web.csrf.CsrfFilter@30bf269a, org.springframework.security.web.authentication.logout.LogoutFilter@65c5b40a, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@35a46fb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51500e14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fc31343, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4452ae87, org.springframework.security.web.session.SessionManagementFilter@757e5e01, org.springframework.security.web.access.ExceptionTranslationFilter@192e95e4, org.springframework.security.web.access.intercept.AuthorizationFilter@7d89e1ef]
+2024-01-22 15:01:22,099 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-01-22 15:01:22,110 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:01:22,118 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8090 (http) with context path '/api/v1'
+2024-01-22 15:01:22,122 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppApplication in 1.002 seconds (process running for 478.861)
+2024-01-22 15:01:22,123 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-01-22 15:02:33,535 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 15:02:33,535 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown initiated...
+2024-01-22 15:02:33,537 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-4 - Shutdown completed.
+2024-01-22 15:17:48,294 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 22784 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 15:17:48,296 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 15:17:48,340 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 15:17:48,340 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 15:17:49,308 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 15:17:49,497 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 178 ms. Found 10 JPA repository interfaces.
+2024-01-22 15:17:49,797 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 15:17:49,828 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 15:17:50,093 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 15:17:50,100 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:17:50,102 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 15:17:50,102 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 15:17:50,181 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 15:17:50,182 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1840 ms
+2024-01-22 15:17:50,299 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 15:17:50,450 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59ce6b55
+2024-01-22 15:17:50,452 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 15:17:50,585 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 15:17:50,768 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:17:50,810 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 15:17:50,835 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 15:17:50,862 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 15:17:50,864 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 15:17:50,942 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 15:17:51,009 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 15:17:51,068 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 15:17:51,345 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 15:17:51,395 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 15:17:52,330 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 15:17:52,367 ERROR o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+2024-01-22 15:17:52,368 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+2024-01-22 15:17:52,369 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-01-22 15:17:52,372 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-01-22 15:17:52,375 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-01-22 15:17:52,386 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 15:17:52,401 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.medico.app.AppApplication.main(AppApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:134)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:295)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+2024-01-22 15:18:43,966 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 24208 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 15:18:43,968 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 15:18:44,000 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 15:18:44,001 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 15:18:44,678 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 15:18:44,803 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 120 ms. Found 10 JPA repository interfaces.
+2024-01-22 15:18:45,037 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 15:18:45,055 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 15:18:45,267 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 15:18:45,275 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:18:45,276 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 15:18:45,276 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 15:18:45,356 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 15:18:45,356 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1355 ms
+2024-01-22 15:18:45,453 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 15:18:45,572 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b9b9316
+2024-01-22 15:18:45,573 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 15:18:45,673 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 15:18:45,808 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:18:45,841 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] Previously run:               1
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-01-22 15:18:45,858 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            1
+2024-01-22 15:18:45,859 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-01-22 15:18:45,879 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 15:18:45,881 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 15:18:45,937 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 15:18:45,977 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 15:18:46,007 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-01-22 15:18:46,172 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 15:18:46,200 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 15:18:46,940 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 15:18:46,970 ERROR o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+2024-01-22 15:18:46,970 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+2024-01-22 15:18:46,971 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-01-22 15:18:46,974 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-01-22 15:18:46,976 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-01-22 15:18:46,986 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 15:18:46,999 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.medico.app.AppApplication.main(AppApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [storage]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:134)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:295)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+2024-01-22 15:19:37,089 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 25408 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 15:19:37,091 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 15:19:37,124 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 15:19:37,124 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 15:19:37,804 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 15:19:37,924 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 116 ms. Found 10 JPA repository interfaces.
+2024-01-22 15:19:38,172 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 15:19:38,187 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 15:19:38,402 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 15:19:38,409 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:19:38,410 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 15:19:38,411 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 15:19:38,480 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 15:19:38,481 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1356 ms
+2024-01-22 15:19:38,577 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 15:19:38,697 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46d16f74
+2024-01-22 15:19:38,699 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 15:19:38,798 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 15:19:38,941 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:19:39,009 INFO l.l.c.JavaLogger [restartedMain] Successfully acquired change log lock
+2024-01-22 15:19:39,011 INFO l.l.c.JavaLogger [restartedMain] Using deploymentId: 5933179011
+2024-01-22 15:19:39,013 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:19:39,043 ERROR l.l.c.JavaLogger [restartedMain] ChangeSet classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll encountered an exception.
+2024-01-22 15:19:39,047 INFO l.l.c.JavaLogger [restartedMain] Update command encountered an exception.
+2024-01-22 15:19:39,054 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 15:19:39,055 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 15:19:39,057 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+2024-01-22 15:19:39,057 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-01-22 15:19:39,073 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-01-22 15:19:39,075 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-01-22 15:19:39,084 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 15:19:39,098 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.medico.app.AppApplication.main(AppApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.command.CommandScope.execute(CommandScope.java:237)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:222)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1371)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:193)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:331)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 23 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:122)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$doRun$1(AbstractUpdateCommandStep.java:105)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.command.core.AbstractUpdateCommandStep.doRun(AbstractUpdateCommandStep.java:104)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:63)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:62)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:106)
+	at liquibase.command.CommandScope.execute(CommandScope.java:214)
+	... 35 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:785)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:118)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:100)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:254)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:74)
+	... 49 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 53 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO medical_file.STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:468)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:177)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1291)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1273)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:744)
+	... 65 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "."
+  Position : 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:462)
+	... 70 common frames omitted
+2024-01-22 15:20:38,878 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AppApplication using Java 17.0.9 with PID 19048 (C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico\target\classes started by e.elmokhtar in C:\Users\e.elmokhtar\Desktop\project-test\learning\app-medico)
+2024-01-22 15:20:38,880 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 15:20:38,917 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-22 15:20:38,917 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-22 15:20:39,602 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 15:20:39,728 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 121 ms. Found 10 JPA repository interfaces.
+2024-01-22 15:20:39,967 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-22 15:20:39,982 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-01-22 15:20:40,190 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8090 (http)
+2024-01-22 15:20:40,197 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2024-01-22 15:20:40,198 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-01-22 15:20:40,199 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-22 15:20:40,278 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-01-22 15:20:40,280 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1362 ms
+2024-01-22 15:20:40,371 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-01-22 15:20:40,493 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e7be5f9
+2024-01-22 15:20:40,494 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-01-22 15:20:40,593 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-01-22 15:20:40,731 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:20:40,799 INFO l.l.c.JavaLogger [restartedMain] Successfully acquired change log lock
+2024-01-22 15:20:40,801 INFO l.l.c.JavaLogger [restartedMain] Using deploymentId: 5933240801
+2024-01-22 15:20:40,803 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-01-22 15:20:40,837 ERROR l.l.c.JavaLogger [restartedMain] ChangeSet classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll encountered an exception.
+2024-01-22 15:20:40,841 INFO l.l.c.JavaLogger [restartedMain] Update command encountered an exception.
+2024-01-22 15:20:40,848 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-01-22 15:20:40,850 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-01-22 15:20:40,852 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+2024-01-22 15:20:40,852 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-01-22 15:20:40,866 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-01-22 15:20:40,868 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-01-22 15:20:40,875 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 15:20:40,889 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.medico.app.AppApplication.main(AppApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.command.CommandScope.execute(CommandScope.java:237)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:222)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1371)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:193)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:331)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 23 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:122)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$doRun$1(AbstractUpdateCommandStep.java:105)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.command.core.AbstractUpdateCommandStep.doRun(AbstractUpdateCommandStep.java:104)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:63)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:62)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:106)
+	at liquibase.command.CommandScope.execute(CommandScope.java:214)
+	... 35 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset classpath:/db/changelog/changes/002-update-file-table-name.sql::raw::includeAll:
+     Reason: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:785)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:118)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:110)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:100)
+	at liquibase.Scope.lambda$child$0(Scope.java:184)
+	at liquibase.Scope.child(Scope.java:193)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:162)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:254)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:74)
+	... 49 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: syntax error at or near "."
+  Position : 64 [Failed SQL: (0) ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO medical_file.STORAGE_id_seq]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:468)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:177)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1291)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1273)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:744)
+	... 65 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "."
+  Position : 64
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:462)
+	... 70 common frames omitted

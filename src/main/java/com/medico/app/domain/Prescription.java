@@ -27,7 +27,7 @@ public class Prescription extends BaseEntity{
     private String description;
 
     @OneToMany(mappedBy = "prescription")
-    private List<File> files = new ArrayList<>();
+    private List<Storage> files = new ArrayList<>();
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "mutual_id")

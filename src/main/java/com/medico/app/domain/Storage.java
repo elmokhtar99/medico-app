@@ -13,13 +13,13 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@Table(name = File.TABLE_NAME)
-public class File extends BaseEntity{
-    public static final String TABLE_NAME = "FILE";
+@Table(name = Storage.TABLE_NAME)
+public class Storage extends BaseEntity{
+    public static final String TABLE_NAME = "STORAGE";
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = TABLE_NAME)
-    @SequenceGenerator(name = TABLE_NAME, sequenceName = "FILE_id_seq", allocationSize = 1)
+    @SequenceGenerator(name = TABLE_NAME, sequenceName = "STORAGE_id_seq", allocationSize = 1)
     private Long id;
     private String path;
     private String name;

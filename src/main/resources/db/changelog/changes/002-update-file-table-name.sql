@@ -1,0 +1,2 @@
+ALTER TABLE medical_file.FILE RENAME TO STORAGE;
+ALTER SEQUENCE medical_file.FILE_id_seq RENAME TO STORAGE_id_seq;

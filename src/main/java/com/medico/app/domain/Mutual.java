@@ -27,7 +27,7 @@ public class Mutual extends BaseEntity{
     private Long id;
 
     @OneToMany(mappedBy = "mutual")
-    private List<File> files = new ArrayList<>();
+    private List<Storage> files = new ArrayList<>();
 
     @OneToOne(mappedBy = "mutual")
     @JsonIgnore

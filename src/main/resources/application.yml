@@ -1,7 +1,9 @@
 server:
   servlet:
-    context-path: /api
+    context-path: /api/${version}
   port: 8090
+
+version: 'v1'
 
 spring:
   datasource:
@@ -58,3 +60,8 @@ resilience4j:
         timeout-duration: 10s
         register-health-indicator: true
 
+# Cors
+allowed-origin-url: '*'
+
+# Storage Path
+folder-path: path
